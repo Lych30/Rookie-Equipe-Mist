@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movement : MonoBehaviour
+public class T2Movement : MonoBehaviour
 {
     [SerializeField] private float speed;
     void Update()
     {
         if (Input.GetKey("right"))
         {
-            transform.Translate(Time.deltaTime * speed, 0,0);
+            transform.Translate(Time.deltaTime * speed, 0, 0);
         }
         if (Input.GetKey("left"))
         {
