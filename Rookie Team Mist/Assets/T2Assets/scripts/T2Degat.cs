@@ -49,6 +49,13 @@ public class T2Degat : MonoBehaviour
 
     private void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            Takedmg(20);
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            Soin(20);
+        }
     }
 }

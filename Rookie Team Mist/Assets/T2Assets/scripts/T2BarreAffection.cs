@@ -11,8 +11,6 @@ public class T2BarreAffection : MonoBehaviour
 
     public Gradient gradient;
 
-    public Image fill;
-
     public void SetMaxAffection(int affection)
     {
         slider.maxValue = affection;
