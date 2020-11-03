@@ -5,7 +5,7 @@ using UnityEngine;
 public class T2EnnemyGenerator1 : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private float IntervalleEntre2;
+    public float IntervalleEntre2;
     public GameObject pos1;
     public GameObject pos2;
     public GameObject pos3;
@@ -13,7 +13,7 @@ public class T2EnnemyGenerator1 : MonoBehaviour
     public GameObject pos5;
     public GameObject pos6;
     public GameObject ennemy;
-    private float TempsRestant;
+    public float TempsRestant;
     private int rand;
     private void Start()
     {
