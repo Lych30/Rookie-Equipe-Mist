@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 14619692}
   - component: {fileID: 14619691}
+  - component: {fileID: 14619693}
   m_Layer: 0
   m_Name: Ennemy_Generator
   m_TagString: Untagged
@@ -160,6 +161,7 @@ MonoBehaviour:
   pos5: {fileID: 1978672352}
   pos6: {fileID: 2022088626}
   ennemy: {fileID: 39856315173726666, guid: 0a875bc26be4712499be664a681b992f, type: 3}
+  TempsRestant: 0
 --- !u!4 &14619692
 Transform:
   m_ObjectHideFlags: 0
@@ -180,6 +182,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &14619693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14619690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a74632e7e8cba48b3ab65de7975352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempsPhase12: 10
+  tempsPhase23: 10
+  tempsPhase34: 15
+  vitesseEmojisPhase1: 5
+  vitesseEmojisPhase2: 10
+  vitesseEmojisPhase3: 12
+  vitesseEmojisPhase4: 15
+  currentspeed: 0
+  vitesseApparition1: 0.75
+  vitesseApparition2: 0.5
+  vitesseApparition3: 0.25
+  vitesseApparition4: 0.2
 --- !u!1 &456869790
 GameObject:
   m_ObjectHideFlags: 0
