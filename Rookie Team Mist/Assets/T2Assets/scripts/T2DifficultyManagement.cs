@@ -18,7 +18,10 @@ public class T2DifficultyManagement : MonoBehaviour
     [SerializeField] private float vitesseApparition3;
     [SerializeField] private float vitesseApparition4;
     private float temps;
-    private int phase = 1;
+    public int phase = 1;
+    public bool PhaseActive = false;
+    public bool ButtonIsPressed= false;
+    
     // Start is called before the first frame update
     // Update is called once per frame
     private void Start()
@@ -30,11 +33,18 @@ public class T2DifficultyManagement : MonoBehaviour
     }
     void Update()
     {
-        if(temps > 0)
+        if(ButtonIsPressed == true)
+        {
+            Destroy(GameObject.Find("ButtonHolder").transform.GetChild(0).gameObject);
+            Destroy(GameObject.Find("ButtonHolder").transform.GetChild(1).gameObject);
+            Destroy(GameObject.Find("ButtonHolder").transform.GetChild(2).gameObject);
+            ButtonIsPressed = false;
+        }
+        if(temps > 0 && PhaseActive)
         {
             temps -= Time.deltaTime;
         }
-        else
+        else if(PhaseActive && phase <4)
         {
             phase++;
             switch (phase)

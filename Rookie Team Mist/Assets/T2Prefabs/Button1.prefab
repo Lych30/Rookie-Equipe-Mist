@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6981310759605381095}
   m_Layer: 5
   m_Name: Button1
-  m_TagString: Untagged
+  m_TagString: BouttonEmojis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
