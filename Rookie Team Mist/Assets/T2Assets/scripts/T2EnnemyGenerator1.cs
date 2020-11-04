@@ -32,25 +32,25 @@ public class T2EnnemyGenerator1 : MonoBehaviour
             switch (rand)
             {
                 case 1:
-                    Debug.Log("1");
+                 
                     Instantiate(ennemy, new Vector3(pos1.transform.position.x, pos1.transform.position.y, 0), Quaternion.identity);
                     break;
                 case 2:
-                    Debug.Log("2");
+                 
                     Instantiate(ennemy, new Vector3(pos2.transform.position.x, pos2.transform.position.y, 0), Quaternion.identity);
                     break;
                 case 3:
-                    Debug.Log("3");
+                   
                     Instantiate(ennemy, new Vector3(pos3.transform.position.x, pos3.transform.position.y, 0), Quaternion.identity);
                     break;
                 case 4:
-                    Debug.Log("4");
+                   
                     Instantiate(ennemy, new Vector3(pos4.transform.position.x, pos4.transform.position.y, 0), Quaternion.identity); break;
                 case 5:
-                    Debug.Log("5");
+                    
                     Instantiate(ennemy, new Vector3(pos5.transform.position.x, pos5.transform.position.y, 0), Quaternion.identity); break;
                 case 6:
-                    Debug.Log("6");
+                   
                     Instantiate(ennemy, new Vector3(pos6.transform.position.x, pos6.transform.position.y, 0), Quaternion.identity); break;
                 default:
                     break;
