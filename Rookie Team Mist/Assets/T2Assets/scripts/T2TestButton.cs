@@ -82,17 +82,5 @@ public class T2TestButton : MonoBehaviour
         }
 
     }
-    void Good()
-    {
-        Debug.Log("Good");
-    }
-    void Bad()
-    {
-        Debug.Log("Bad");
-    }
-    void Neutral()
-    {
-        Debug.Log("Neutral");
-    }
 
 }
