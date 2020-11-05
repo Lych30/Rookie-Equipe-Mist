@@ -14,7 +14,6 @@ public class T2Degat : MonoBehaviour
     {
         BarreAffection.SetMaxAffection(maxAffection);
         BarreAffection.SetAffection(affection);
-        GetComponent<T2BarreAffection>().SetAffection(affection);
     }
 
 
