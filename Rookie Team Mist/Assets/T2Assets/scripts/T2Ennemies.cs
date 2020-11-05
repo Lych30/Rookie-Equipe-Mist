@@ -40,6 +40,8 @@ public class T2Ennemies : MonoBehaviour
             GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().PhaseActive = false;
 
             GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().phase = 1;
+            GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().temps = 15f; ;
+            Manager.GetComponent<T2DifficultyManagement>().currentspeed = 5;
             if (GameObject.Find("Canvas").GetComponent<T2TestButton>().manche == 4)
             {
                 Debug.Log("FINI");

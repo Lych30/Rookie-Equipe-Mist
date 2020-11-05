@@ -24,14 +24,10 @@ public class T2Score : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("T2BonSmiley"))
-        {
-            score = ++score;
-            SetScoreText();
-        }
+      
         if (collision.gameObject.CompareTag("T2MauvaisSmiley"))
         {
-            score = --score;
+            score = ++score;
             SetScoreText();
         }
     }

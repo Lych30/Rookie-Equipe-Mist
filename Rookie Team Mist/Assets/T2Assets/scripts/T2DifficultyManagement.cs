@@ -17,7 +17,7 @@ public class T2DifficultyManagement : MonoBehaviour
     [SerializeField] private float vitesseApparition2;
     [SerializeField] private float vitesseApparition3;
     [SerializeField] private float vitesseApparition4;
-    private float temps;
+    public float temps;
     public int phase = 1;
     public bool PhaseActive = false;
     public bool ButtonIsPressed= false;
@@ -49,6 +49,11 @@ public class T2DifficultyManagement : MonoBehaviour
             phase++;
             switch (phase)
             {
+                case 1:
+                    currentspeed = vitesseEmojisPhase1;
+                    gameObject.GetComponent<T2EnnemyGenerator1>().IntervalleEntre2 = vitesseApparition1;
+                    temps = 15f;
+                    break;
                 case 2:
                     currentspeed = vitesseEmojisPhase2;
                     gameObject.GetComponent<T2EnnemyGenerator1>().IntervalleEntre2 = vitesseApparition2;
@@ -64,7 +69,7 @@ public class T2DifficultyManagement : MonoBehaviour
                     gameObject.GetComponent<T2EnnemyGenerator1>().IntervalleEntre2 = vitesseApparition4;
                     break;
             }
-           
+            
         }
         
     }
