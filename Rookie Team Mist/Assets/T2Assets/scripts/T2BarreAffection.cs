@@ -17,15 +17,15 @@ public class T2BarreAffection : MonoBehaviour
     {
         slider.maxValue = affection;
         slider.value = affection;
+        SetAffection(50);
 
-        fill.color = gradient.Evaluate(1f);
+       
     }
 
     public void SetAffection(int affection)
     {
         slider.value = affection;
 
-        fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 
     private void Update()

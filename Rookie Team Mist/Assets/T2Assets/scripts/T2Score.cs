@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class T2Score : MonoBehaviour
 {
     public Text scoreText;
-    private int score;
+    public int score;
 
 
 

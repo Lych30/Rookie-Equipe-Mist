@@ -14,19 +14,8 @@ public class T2Degat : MonoBehaviour
     {
         affection = maxAffection;
         BarreAffection.SetMaxAffection(maxAffection);
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("T2MauvaisSmiley"))
-        {
-            Takedmg(20);
-        }
-        if (collision.gameObject.CompareTag("T2BonSmiley"))
-        {
-            Soin(20);
-        }
+        affection = 50;
+        BarreAffection.SetAffection(affection);
     }
 
     public void Soin(int heal)
@@ -58,5 +47,6 @@ public class T2Degat : MonoBehaviour
         {
             Soin(20);
         }
+     
     }
 }

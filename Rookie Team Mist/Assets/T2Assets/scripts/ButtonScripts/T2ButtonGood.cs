@@ -11,21 +11,27 @@ public class T2ButtonGood : MonoBehaviour
         {
             case "Theme1_Good1(Clone)":
                 Salade();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Soin(13);
                 break;
             case "Theme1_Good2(Clone)":
                 Citron();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Soin(13);
                 break;
             case "Theme2_Good1(Clone)":
                 Sport();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Soin(13);
                 break;
             case "Theme2_Good2(Clone)":
                 Théatre();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Soin(13);
                 break;
             case "Theme3_Good1(Clone)":
                 Good1();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Soin(25);
                 break;
             case "Theme3_Good2(Clone)":
                 Good2();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Soin(25);
                 break;
         }
         Debug.Log("Good");
@@ -39,21 +45,27 @@ public class T2ButtonGood : MonoBehaviour
         {
             case "Theme1_Bad1(Clone)":
                 Burger();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Takedmg(13);
                 break;
             case "Theme1_Bad2(Clone)":
                 Soda();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Takedmg(13);
                 break;
             case "Theme2_Bad1(Clone)":
                 Soirée();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Takedmg(13);
                 break;
             case "Theme2_Bad2(Clone)":
                 Drogue();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Takedmg(13);
                 break;
             case "Theme3_Bad1(Clone)":
                 Bad1();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Takedmg(25);
                 break;
             case "Theme3_Bad2(Clone)":
                 Bad2();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Takedmg(25);
                 break;
         }
         Debug.Log("Bad");
@@ -100,10 +112,12 @@ public class T2ButtonGood : MonoBehaviour
     void Sandwich()
     {
         GameObject.FindGameObjectWithTag("Player").transform.localScale /= 1.2f;
+     
     }
     void Burger()
     {
         GameObject.FindGameObjectWithTag("Player").GetComponent<T2Movement>().speed -= 1.2f;
+
     }
     void Soda()
     {
