@@ -50,9 +50,5 @@ public class T2Ennemies : MonoBehaviour
                 Destroy(child.gameObject);
             
         }
-        if (collision.gameObject.name == "ScoreHolder")
-        {
-            Destroy(gameObject);
-        }
     }
 }
