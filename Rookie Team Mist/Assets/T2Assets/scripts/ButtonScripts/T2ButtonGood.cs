@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class T2ButtonGood : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class T2ButtonGood : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Soin(25);
                 break;
         }
-        Debug.Log("Good");
+
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().PhaseActive = true;
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().ButtonIsPressed = true;
 
@@ -68,7 +69,7 @@ public class T2ButtonGood : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().Takedmg(25);
                 break;
         }
-        Debug.Log("Bad");
+
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().PhaseActive = true;
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().ButtonIsPressed = true;
 
@@ -100,9 +101,14 @@ public class T2ButtonGood : MonoBehaviour
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().PhaseActive = true;
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().ButtonIsPressed = true;
     }
+    public void retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void Menu()
+    {
 
-
-
+    }
 
     void Pate()
     {
@@ -147,7 +153,7 @@ public class T2ButtonGood : MonoBehaviour
     }
     void Drogue()
     {
-        GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().MultiplicateurSpeed -= 1.2f;
+        GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().MultiplicateurSpeed -= 0.5f;
     }
     void Sport()
     {

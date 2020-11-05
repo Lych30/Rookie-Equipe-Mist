@@ -120,7 +120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wait: 1
+  Manager: {fileID: 0}
   speed: 5
+  EnnemyHolder: {fileID: 0}
+  GameOver: 0
 --- !u!58 &-7969067036533270870
 CircleCollider2D:
   m_ObjectHideFlags: 0

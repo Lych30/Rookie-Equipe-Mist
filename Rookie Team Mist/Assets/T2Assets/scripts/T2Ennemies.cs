@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class T2Ennemies : MonoBehaviour
 {
@@ -8,7 +9,6 @@ public class T2Ennemies : MonoBehaviour
     public GameObject Manager;
     public float speed;
     public GameObject EnnemyHolder;
-    private int result;
     private void Start()
     {
         EnnemyHolder = GameObject.Find("EnnemyHolder");
@@ -37,48 +37,25 @@ public class T2Ennemies : MonoBehaviour
         {
             Destroy(gameObject);
             GameObject.Find("Canvas").GetComponent<T2TestButton>().InitialisationButton = false;
-           
+            collision.GetComponent<T2Movement>().conteur++;
             GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().PhaseActive = false;
 
             GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().phase = 1;
             GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().temps = 15f; ;
             Manager.GetComponent<T2DifficultyManagement>().currentspeed = 5 * GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().MultiplicateurSpeed;
-            if (GameObject.Find("Canvas").GetComponent<T2TestButton>().manche == 4)
+            if (GameObject.Find("Canvas").GetComponent<T2TestButton>().manche == 4 )
             {
-                result = GameObject.FindGameObjectWithTag("Player").GetComponent<T2Degat>().affection;
-                if (result <= 0)
-                {
-                    result *= 1;
-                }
-                else
-                {
-                    if (result >= 1 && result <= 49)
-                    {
-                        result *= 2;
-                    }
-                    else
-                    {
-                        if(result == 50)
-                        {
-                            result *= 3;
-                        }
-                        else
-                        {
-                            if(result > 50 && result <= 99)
-                            {
-                                result *= 4;
-                            }
-                            else
-                            {
-                                result *= 5;
-                            }
-                        }
-                    }
-                }
-                Debug.Log(result);
+                
             }
             foreach (Transform child in EnnemyHolder.transform)
                 Destroy(child.gameObject);
         }
     }
+   
+       
+        
+            
+            
+      
+    
 }
