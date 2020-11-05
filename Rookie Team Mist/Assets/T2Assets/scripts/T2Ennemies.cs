@@ -40,8 +40,13 @@ public class T2Ennemies : MonoBehaviour
             GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().PhaseActive = false;
 
             GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().phase = 1;
+            if (GameObject.Find("Canvas").GetComponent<T2TestButton>().manche == 4)
+            {
+                Debug.Log("FINI");
+            }
             foreach (Transform child in EnnemyHolder.transform)
                 Destroy(child.gameObject);
+            
         }
     }
 }
