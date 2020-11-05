@@ -12,7 +12,7 @@ public class T2Movement : MonoBehaviour
     public Text text;
     private void Start()
     {
-        text.text = "HighScore : " + PlayerPrefs.GetInt("HighsScore", 0).ToString();
+        text.text = "HighScore " + PlayerPrefs.GetInt("Highscore", 0).ToString();
         Debug.Log(PlayerPrefs.GetInt("HighsScore", 0));
     }
     void Update()
@@ -33,7 +33,7 @@ public class T2Movement : MonoBehaviour
         }
         if(!ScoreScreen.activeSelf)
         {
-            text.text = "HighScore : "+ PlayerPrefs.GetInt("HighsScore", 0).ToString();
+            text.text = "HighScore "+ PlayerPrefs.GetInt("Highscore", 0).ToString();
         } 
         
     }
