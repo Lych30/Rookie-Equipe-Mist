@@ -48,7 +48,7 @@ public class T2MenuPause : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("SalleArcade");
     }
 
 }
