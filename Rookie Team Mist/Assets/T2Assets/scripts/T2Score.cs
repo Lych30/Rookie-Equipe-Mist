@@ -29,6 +29,7 @@ public class T2Score : MonoBehaviour
         {
             score = ++score;
             SetScoreText();
+            Destroy(collision.gameObject);
         }
     }
 
