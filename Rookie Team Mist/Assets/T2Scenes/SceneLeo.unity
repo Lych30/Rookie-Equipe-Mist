@@ -274,41 +274,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90cbe8d71b83122408bfa1e7051ca140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Theme1_Good1: {fileID: 1750409970562272052, guid: a34dfa8b672a30442b044a4734fb8463,
+  Theme1_Good1: {fileID: 5434398313310606739, guid: ab8ae6f53934bfd4494e89c0b4edabdb,
     type: 3}
-  Theme1_Good2: {fileID: 1750409970562272052, guid: a34dfa8b672a30442b044a4734fb8463,
+  Theme1_Good2: {fileID: 7957853073344440523, guid: dfeeaff81aed52947a4b7e76a08c06a7,
     type: 3}
-  Theme1_Neutral1: {fileID: 4727659023583616818, guid: 287bda88257b06f48b1a51fa19d8fc0e,
+  Theme1_Neutral1: {fileID: 2726897271166152682, guid: e97a992d00aa50b4fba2856bcdf45758,
     type: 3}
-  Theme1_Neutral2: {fileID: 4727659023583616818, guid: 287bda88257b06f48b1a51fa19d8fc0e,
+  Theme1_Neutral2: {fileID: 6992689305365145801, guid: b4a001d0a0641a045bd276e5926f8dd5,
     type: 3}
-  Theme1_Bad1: {fileID: 2233228804369246965, guid: f2744a35c64adb445a8580692ef0c13a,
+  Theme1_Bad1: {fileID: 5497747871660850816, guid: ab7e18b492ab1144a9bab57c5b2da985,
     type: 3}
-  Theme1_Bad2: {fileID: 2233228804369246965, guid: f2744a35c64adb445a8580692ef0c13a,
+  Theme1_Bad2: {fileID: 1933452073297335256, guid: 369b29094acf6a84caa062d1f0c63ff9,
     type: 3}
-  Theme2_Good1: {fileID: 1750409970562272052, guid: a34dfa8b672a30442b044a4734fb8463,
+  Theme2_Good1: {fileID: 3921804553735437058, guid: 0bb4e080683cd8842b042fe7dd7a4692,
     type: 3}
-  Theme2_Good2: {fileID: 1750409970562272052, guid: a34dfa8b672a30442b044a4734fb8463,
+  Theme2_Good2: {fileID: 792175559227868558, guid: aa203b431897c5843a504c75eeaf5208,
     type: 3}
-  Theme2_Neutral1: {fileID: 4727659023583616818, guid: 287bda88257b06f48b1a51fa19d8fc0e,
+  Theme2_Neutral1: {fileID: 1102316828553014195, guid: 44ebf30055deddb439b348233865741c,
     type: 3}
-  Theme2_Neutral2: {fileID: 4727659023583616818, guid: 287bda88257b06f48b1a51fa19d8fc0e,
+  Theme2_Neutral2: {fileID: 8686100508262601900, guid: af8efe162e2edaa47a48f7ff179cc373,
     type: 3}
-  Theme2_Bad1: {fileID: 2233228804369246965, guid: f2744a35c64adb445a8580692ef0c13a,
+  Theme2_Bad1: {fileID: 6918269742322504038, guid: 9817f45de8fcfdb4f91f1804d23dbc6c,
     type: 3}
-  Theme2_Bad2: {fileID: 2233228804369246965, guid: f2744a35c64adb445a8580692ef0c13a,
+  Theme2_Bad2: {fileID: 160613411531241161, guid: a9de1ccbd26222e44a8d64b8dcb32d30,
     type: 3}
-  Theme3_Good1: {fileID: 1750409970562272052, guid: a34dfa8b672a30442b044a4734fb8463,
+  Theme3_Good1: {fileID: 3197771394617308186, guid: 3d007b55b26d5b843a82ad92022abde6,
     type: 3}
-  Theme3_Good2: {fileID: 1750409970562272052, guid: a34dfa8b672a30442b044a4734fb8463,
+  Theme3_Good2: {fileID: 6687473158543581501, guid: 2441fc4bb2d07794589fec03c1da5189,
     type: 3}
-  Theme3_Neutral1: {fileID: 4727659023583616818, guid: 287bda88257b06f48b1a51fa19d8fc0e,
+  Theme3_Neutral1: {fileID: 1957668992896553703, guid: 137074fefd44d8946b6f16312c12a2ea,
     type: 3}
-  Theme3_Neutral2: {fileID: 4727659023583616818, guid: 287bda88257b06f48b1a51fa19d8fc0e,
+  Theme3_Neutral2: {fileID: 8498936364052150084, guid: 6f87cc994f87edb48bade1e5a1e80548,
     type: 3}
-  Theme3_Bad1: {fileID: 2233228804369246965, guid: f2744a35c64adb445a8580692ef0c13a,
+  Theme3_Bad1: {fileID: 3078176101568977073, guid: d4464b82b7dfbdb4895024677c6facef,
     type: 3}
-  Theme3_Bad2: {fileID: 2233228804369246965, guid: f2744a35c64adb445a8580692ef0c13a,
+  Theme3_Bad2: {fileID: 3285556609873149761, guid: 4a75d5e97f4e2064abdd220d5ac321bf,
     type: 3}
   Boutton: {fileID: 0}
   Boutton2: {fileID: 0}
@@ -349,10 +349,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1233,7 +1233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321612042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6, y: -16, z: 0}
+  m_LocalPosition: {x: -200, y: -62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 92251154}
@@ -1263,7 +1263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329580044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6, y: -49, z: 0}
+  m_LocalPosition: {x: -200, y: 242, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 92251154}
@@ -1457,7 +1457,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994017000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6, y: 21, z: 0}
+  m_LocalPosition: {x: -200, y: -378, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 92251154}

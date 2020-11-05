@@ -70,11 +70,11 @@ public class T2TestButton : MonoBehaviour
                 case 2:
                     if (rand == 1)
                     {
-                        Boutton3 = Theme2_Bad1;
+                        Boutton3 = Theme1_Bad1;
                     }
                     else
                     {
-                        Boutton3 = Theme2_Bad2;
+                        Boutton3 = Theme1_Bad2;
 
                     }
                     break;
