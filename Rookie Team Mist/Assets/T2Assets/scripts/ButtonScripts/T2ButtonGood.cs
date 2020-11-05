@@ -31,7 +31,7 @@ public class T2ButtonGood : MonoBehaviour
         Debug.Log("Good");
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().PhaseActive = true;
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().ButtonIsPressed = true;
-        Manager.GetComponent<T2DifficultyManagement>().currentspeed = 5 * GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().MultiplicateurSpeed;
+
     }
     public void Bad()
     {
@@ -59,7 +59,6 @@ public class T2ButtonGood : MonoBehaviour
         Debug.Log("Bad");
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().PhaseActive = true;
         GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().ButtonIsPressed = true;
-        Manager.GetComponent<T2DifficultyManagement>().currentspeed = 5 * GameObject.Find("Ennemy_Generator").GetComponent<T2DifficultyManagement>().MultiplicateurSpeed;
 
     }
     public void Neutral()
