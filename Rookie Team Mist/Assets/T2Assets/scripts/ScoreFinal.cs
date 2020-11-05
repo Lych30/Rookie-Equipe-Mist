@@ -63,7 +63,7 @@ public class ScoreFinal : MonoBehaviour
             PlayerPrefs.SetInt("Highscore", score);
         }
         GameObject.FindGameObjectWithTag("Player").GetComponent<T2Movement>().GameOver = false;
-        Highscore.text = "HighScore : " + PlayerPrefs.GetInt("Highscore", 0).ToString();
+        Highscore.text = "HighScore " + PlayerPrefs.GetInt("Highscore", 0).ToString();
 
     }
 }
