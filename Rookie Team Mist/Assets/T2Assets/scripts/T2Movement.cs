@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class T2Movement : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    public float speed;
     void Update()
     {
         if (Input.GetKey("left"))

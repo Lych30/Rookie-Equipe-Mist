@@ -7,11 +7,12 @@ using UnityEngine.UI;
 public class T2Degat : MonoBehaviour
 {
     public int maxAffection = 100;
-    public int affection;
+    public int affection = 5;
     public T2BarreAffection BarreAffection;
 
     private void Start()
     {
+        affection = maxAffection;
         BarreAffection.SetMaxAffection(maxAffection);
     }
 
