@@ -10,6 +10,7 @@ public class T2Degat : MonoBehaviour
     public int affection = 5;
     public T2BarreAffection BarreAffection;
 
+
     private void Start()
     {
         affection = maxAffection;
