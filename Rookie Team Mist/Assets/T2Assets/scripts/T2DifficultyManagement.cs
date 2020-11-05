@@ -28,6 +28,7 @@ public class T2DifficultyManagement : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
+   
         currentspeed = vitesseEmojisPhase1 * MultiplicateurSpeed;
         gameObject.GetComponent<T2EnnemyGenerator1>().IntervalleEntre2 = vitesseApparition1;
         temps = tempsPhase12;
