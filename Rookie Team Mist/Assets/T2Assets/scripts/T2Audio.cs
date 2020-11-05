@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class T2Audio : MonoBehaviour
 {
-    AudioSource Spitfire;
-    AudioSource Ascenseur;
-
-    bool APlay;
+    public AudioSource Spitfire;
+    public AudioSource Ascenseur;
 
     void Start()
     {
         Spitfire = GetComponent<AudioSource>(); 
         Ascenseur = GetComponent<AudioSource>();
-        APlay = true;
     }
 
-    public void SetMaxAffection(bool changement)
+    public void ChangementMusic(bool changement, bool APlay)
     {
         if (APlay == true && changement == true)
         {
@@ -33,7 +30,7 @@ public class T2Audio : MonoBehaviour
         }
     }
 
-void Update()
+    void Update()
     {
         
     }

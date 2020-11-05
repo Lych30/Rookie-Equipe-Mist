@@ -23,17 +23,44 @@ public class T2DifficultyManagement : MonoBehaviour
     public bool ButtonIsPressed= false;
     public float MultiplicateurSpeed =1;
     public float MultiplicateurApparition =1;
-    
+
+
+    /*public AudioSource Spitfire;
+    public AudioSource Ascenseur;*/
+
     // Start is called before the first frame update
     // Update is called once per frame
     private void Start()
     {
-   
+        /*Spitfire = GetComponent<AudioSource>();
+        Ascenseur = GetComponent<AudioSource>();*/
+
         currentspeed = vitesseEmojisPhase1 * MultiplicateurSpeed;
         gameObject.GetComponent<T2EnnemyGenerator1>().IntervalleEntre2 = vitesseApparition1;
         temps = tempsPhase12;
         phase = 1;
+        /*Spitfire.Stop();
+        Ascenseur.Play();*/
     }
+
+    /*public void ChangementMusic(bool changement, bool APlay)
+    {
+        if (APlay == true && changement == true)
+        {
+            Ascenseur.Stop();
+            Spitfire.Play();
+            APlay = false;
+        }
+
+        if (APlay == false && changement == true)
+        {
+            Spitfire.Stop();
+            Ascenseur.Play();
+            APlay = true;
+        }
+    }*/
+
+
     void Update()
     {
         if(ButtonIsPressed == true)
@@ -42,13 +69,17 @@ public class T2DifficultyManagement : MonoBehaviour
             Destroy(GameObject.Find("ButtonHolder").transform.GetChild(1).gameObject);
             Destroy(GameObject.Find("ButtonHolder").transform.GetChild(2).gameObject);
             ButtonIsPressed = false;
+            /*Ascenseur.Stop();
+            Spitfire.Play();*/
         }
         if(temps > 0 && PhaseActive)
         {
+            
             temps -= Time.deltaTime;
         }
         else if(PhaseActive && phase <4)
         {
+            
             phase++;
             switch (phase)
             {
