@@ -107,7 +107,7 @@ public class T2ButtonGood : MonoBehaviour
     }
     public void Menu()
     {
-
+        SceneManager.LoadScene("SalleArcade");
     }
 
     void Pate()
